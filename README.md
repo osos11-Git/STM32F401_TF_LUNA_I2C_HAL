@@ -64,5 +64,5 @@ CubeMx Trace ITM SVW
 
 ![alt text](https://github.com/osos11-Git/STM32F401_TF_LUNA_I2C_HAL/blob/main/Pics/cubemx.JPG?raw=true)
 ![alt text](https://github.com/osos11-Git/STM32F401_TF_LUNA_I2C_HAL/blob/main/Pics/printstatus.JPG?raw=true)
-![alt text](https://github.com/osos11-Git/STM32F401_TF_LUNA_I2C_HAL/blob/main/Pics/cubemx.JPG?raw=true)
+![alt text](https://github.com/osos11-Git/STM32F401_TF_LUNA_I2C_HAL/blob/main/Pics/tfdist.jpeg?raw=true)
 
