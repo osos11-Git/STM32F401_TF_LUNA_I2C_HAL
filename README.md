@@ -21,7 +21,7 @@ Arduino (IDE only… not the mcu) uses 7 bit addressing system and the rest (inc
 Whenever you are using the I2C address, use the full 8 bits for the address. 
 You can find the address for your device in it’s datasheet. 
 The device 7 bits address value in datasheet must be shifted to the left .
-Slave address has been already shifted to the left in the library.
+Slave address has been already shifting to the left in the library.
 
 Welcome to the real world :D
 ```
@@ -47,7 +47,7 @@ uint8_t  tfCode[14];    // device serial number
 uint8_t tfCount = 0;
 int main()
 {
-  TF_Luna_init(&TF_Luna_1, &hi2c1, 0x10); // Slave address has been already shifted to the left in the library. 
+  TF_Luna_init(&TF_Luna_1, &hi2c1, 0x10); //0x10->7bit. 7bit Slave address has been already shifting to the left in the library. 
   while(1)
   {
     getData(&TF_Luna_1, &tfDist, &tfFlux, &tfTemp);
