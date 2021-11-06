@@ -9,7 +9,6 @@
 #define INC_TFLUNA_I2C_H_
 
 
-
 /* File Name: tfluna_i2c.h
  * Developer: Bud Ryerson
  * Ported by: osos11
