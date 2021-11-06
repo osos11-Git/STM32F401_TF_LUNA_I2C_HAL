@@ -115,7 +115,7 @@ typedef struct My_Lidar
 //                 OBJECT CLASS DEFINITIONS
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     //Init device
-	bool TF_Luna_init(TF_Luna_Lidar *tf_luna,I2C_HandleTypeDef *i2c,uint8_t TF_Luna_address);
+    bool TF_Luna_init(TF_Luna_Lidar *tf_luna,I2C_HandleTypeDef *i2c,uint8_t TF_Luna_address);
 
     // Get data
     bool getData( TF_Luna_Lidar *tf_luna,int16_t *dist, int16_t *flux, int16_t *temp);
