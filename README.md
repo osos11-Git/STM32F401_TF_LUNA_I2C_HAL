@@ -13,6 +13,7 @@ HAL
 
 Supported multiple devices on one i2c line.
 
+Printf debugging and SWV, you should watch the video : https://youtu.be/sPzQ5CniWtw
 
 ```
 ARDUINO SLAVE ADDRESS
