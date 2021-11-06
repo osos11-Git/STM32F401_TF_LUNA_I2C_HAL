@@ -5,7 +5,7 @@ STM32F401CCU6 Blackpill
 
 Based on Arduino... https://github.com/budryerson/TFLuna-I2C
 
-STM32H7 FW v1.9.0
+STM32 F4 FW 1.26.2
 
 STM32CubeIDE v1.7.0
 
