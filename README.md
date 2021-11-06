@@ -21,6 +21,7 @@ Arduino (IDE only… not the mcu) uses 7 bit addressing system and the rest (inc
 Whenever you are using the I2C address, use the full 8 bits for the address. 
 You can find the address for your device in it’s datasheet. 
 The device 7 bits address value in datasheet must be shifted to the left .
+Slave address has been already shifted to the left in the library.
 
 Welcome to the real world :D
 ```
@@ -32,7 +33,7 @@ How to use this Library:
 ```
 #include "tfluna_i2c.h"
 TF_Luna_Lidar TF_Luna_1;
-int16_t  tfAddr = TFL_DEF_ADR;    // default I2C address = 0x10
+int16_t  tfAddr = TFL_DEF_ADR;    // default I2C address = 0x10 (7 bit)
 uint16_t tfFrame = TFL_DEF_FPS;   // default frame rate
 // device variables passed back by getData
 int16_t  tfDist = 0 ;   // distance in centimeters
@@ -46,7 +47,7 @@ uint8_t  tfCode[14];    // device serial number
 uint8_t tfCount = 0;
 int main()
 {
-  TF_Luna_init(&TF_Luna_1, &hi2c1, 0x10);
+  TF_Luna_init(&TF_Luna_1, &hi2c1, 0x10); // Slave address has been already shifted to the left in the library. 
   while(1)
   {
     getData(&TF_Luna_1, &tfDist, &tfFlux, &tfTemp);
